@@ -469,9 +469,105 @@
               </a>
             </li>
           </ul>
+          <div class="footer-form-container">
+          <form  class="footer-form">
+            <label for="footer-form-input"  class="footer-form-label-subscribe">Subscribe</label>
+            <input type="email" name="footer-form-input"
+            id="footer-form-input"
+            placeholder="E-mail"
+            class="footer-form-input-email">
+          </form>
+          <button type="submit" class="footer-form-btn-subscribe">Subscribe</button>
+        </div>
+
         </div>
       </div>
     </footer>
-    <!-- Footer  -->
+    <!-- /Footer  -->
+    <div class="backdrop  ">
+      <div class="modal ">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-btn-icon" width="8"
+          height="8"
+          aria-label="close icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="form-leave-contacts">Leave your contacts and we will call you back</p>
+        <form class="contact-form">
+          <div class="contacts-form-fieds-wrapper">
+            <label for="user-name" class="contacts-form-fieds-label">Name</label>
+            <div class="contacts-form-input-wrapper">
+              <input 
+              type="text" class="contacts-form-fieds-input" name="user-name" 
+              id="user-name"
+              title="Olexander"
+              required>
+              <svg class="contacts-form-field-icon" width="18"
+               height="18">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="contacts-form-fieds-wrapper">
+            <label for="user-phone" class="contacts-form-fieds-label">Phone</label>
+            <div class="contacts-form-input-wrapper">
+              <input type="tel" class="contacts-form-fieds-input"
+            name="user-phone" 
+            id="user-phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            required>
+            <svg class="contacts-form-field-icon" width="18"
+            height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            </div>
+            
+          </div>
+          <div class="contacts-form-fieds-wrapper">
+            <label for="user-email" class="contacts-form-fieds-label">Email</label>
+            <div class="contacts-form-input-wrapper"><input type="email" class="contacts-form-fieds-input"
+              name="user-email"
+              id="user-email"
+              required>
+              <svg class="contacts-form-field-icon"
+              width="18"
+              height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            </div>
+          <div class="contacts-form-fieds-wrapper">
+            <label for="user-comment" class="contacts-form-fieds-label">Comment</label>
+            <textarea 
+            name="user-comment" 
+            id="user-comment"
+            class="contacts-form-fieds-comment"
+            placeholder="Text input"
+            required >
+          </textarea>
+          </div>
+        <div class="contacts-form-fieds-checkbox-wrapper">
+          <input type="checkbox" class="contacts-form-privacy-checkbox visually-hidden" name="privacy-policy-checkbox" 
+          id="privacy-policy-checkbox"
+          value="true"
+          required>
+          <label for="privacy-policy-checkbox" class="contacts-form-checkbox-label">
+            <span class="contacts-form-checkbox-icon">
+              <svg class="contacts-form-privacy-tick-icon"
+              width="10"
+              height="8">
+                <use href="./images/icons.svg#icon-tick"></use>
+              </svg>
+          </span>
+          I accept the terms and conditions of the
+            <a href="" class="privacy-policy-link">Privacy Policy</a>
+          </label>
+        </div>
+        <button class="contacts-form-submit-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
