@@ -469,23 +469,28 @@
               </a>
             </li>
           </ul>
-          <div class="footer-form-container">
+        </div>
+        <div class="footer-form-container">
+          <p class="footer-form-text">Subscribe</p>
           <form  class="footer-form">
-            <label for="footer-form-input"  class="footer-form-label-subscribe">Subscribe</label>
-            <input type="email" name="footer-form-input"
+            <label for="footer-form-input"  class="footer-form-label-subscribe">
+              <input type="email" name="footer-form-input"
             id="footer-form-input"
             placeholder="E-mail"
             class="footer-form-input-email">
-            <button type="submit" class="footer-form-btn-subscribe">Subscribe</button>
+            </label>
+            <button type="submit" class="footer-form-btn-subscribe">Subscribe <svg class="footer-btn-send" width="24"
+              height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
           </form>
-        </div>
-
         </div>
       </div>
     </footer>
     <!-- /Footer  -->
-    <div class="backdrop is-open">
-      <div class="modal ">
+    <div class="backdrop is-open ">
+      <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-btn-icon" width="8"
           height="8"
@@ -504,7 +509,7 @@
               title="Olexander"
               required>
               <svg class="contacts-form-field-icon" width="18"
-               height="18">
+               height="24">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
             </div>
@@ -525,7 +530,7 @@
             </div>
             
           </div>
-          <div class="contacts-form-fieds-wrapper">
+          <div class="contacts-form-fieds-wrapper email-form-fields">
             <label for="user-email" class="contacts-form-fieds-label">Email</label>
             <div class="contacts-form-input-wrapper"><input type="email" class="contacts-form-fieds-input"
               name="user-email"
@@ -538,7 +543,7 @@
               </svg>
             </div>
             </div>
-          <div class="contacts-form-fieds-wrapper">
+          <div class="contacts-form-fieds-wrapper ">
             <label for="user-comment" class="contacts-form-fieds-label">Comment</label>
             <textarea 
             name="user-comment" 
@@ -550,10 +555,10 @@
           </div>
         <div class="contacts-form-fieds-checkbox-wrapper">
           <input type="checkbox" class="contacts-form-privacy-checkbox visually-hidden" name="privacy-policy-checkbox" 
-          id="privacy-policy-checkbox"
+          id="user-privacy"
           value="true"
           required>
-          <label for="privacy-policy-checkbox" class="contacts-form-checkbox-label">
+          <label for="user-privacy" class="contacts-form-checkbox-label">
             <span class="contacts-form-checkbox-icon">
               <svg class="contacts-form-privacy-tick-icon"
               width="10"
